@@ -1,0 +1,8 @@
+<div class="card">
+  <%= link_to cd_path(cd) do %>
+    <%= image_tag(cd.image, class: :card__img) %>
+  <% end %>
+  <div class="card__body">
+    <%= link_to cd.name, cd_path(cd), class: :card__title %>
+  </div>
+</div>

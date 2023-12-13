@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_11_070409) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_12_062131) do
+  create_table "cds", charset: "utf8", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "spec_number", null: false
+    t.integer "major_genre_id", null: false
+    t.integer "minor_genre_id", null: false
+    t.integer "jan_code"
+    t.string "release_label"
+    t.string "release_date"
+    t.integer "price"
+    t.text "program"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false

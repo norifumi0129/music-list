@@ -1,0 +1,48 @@
+<%= form_with model: @cd, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "CDの名称" %><br />
+    <%= f.text_field :title, id:"cd_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :spec_number, "規格品番" %><br />
+    <%= f.text_field :spec_number, id:"cd_spec_number" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :major_genre_id, "ジャンル" %><br />
+    <%= f.text_field :cmajor_genre_id, id:"cd_major_genre_id" %>
+  </div>
+  <div class="field">
+    <%= f.label :minor_genre_id, "小ジャンル" %><br />
+    <%= f.text_field :minor_genre_id, id:"cd_minor_genre_id" %>
+  </div>
+  <div class="field">
+    <%= f.label :jan_code, "JANコード" %><br />
+    <%= f.text_field :jan_code, id:"cd_jan_code" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :release_label, "発売元" %><br />
+    <%= f.text_field :release_label, id:"cd_release_label" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :release_date, "発売日" %><br />
+    <%= f.text_field :release_date, id:"cd_release_date" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :price, "価格（税抜）" %><br />
+    <%= f.text_field :price, id:"price" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :program, "曲目" %><br />
+    <%= f.text_area :program, id:"program" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
