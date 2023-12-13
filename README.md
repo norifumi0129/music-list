@@ -15,19 +15,18 @@ has_many: CD
 
 |Column           |Type       |Options                        |
 |-----------------|-----------|-------------------------------|
-|title            |string     |null: false                    |
+|name             |string     |null: false                    |
 |spec_number      |string     |null: false                    |
-|major_genre_id   |integer    |null: false                    |
-|minor_genre_id   |integer    |null: false                    |
+|major_genre_id   |string     |null: false                    |
+|minor_genre_id   |string     |null: false                    |
 |jan_code         |integer    |                               |
 |release_label    |string     |                               |
-|release_date     |string     |                               |
+|release_date     |integer    |                               |
 |price            |integer    |                               |
 
 
 ### Association
 has_many: Track
-has_many: Recording
 
 ## Trackテーブル
 |Column        |Type       |Options                        |
@@ -46,9 +45,7 @@ has_many: Recording
 |Column         |Type       |Options                        |
 |---------------|-----------|-------------------------------|
 |cd             |references |null: false, foreign_key: true |
-|track          |references |null: false, foreign_key: true |
 |recording_date |date       |                               |
 
 ### Association
 belongs_to: Track
-belongs_to: Cd
