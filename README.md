@@ -23,33 +23,26 @@ has_many: CD
 |release_label    |string     |                               |
 |release_date     |string     |                               |
 |price            |integer    |                               |
-|program          |text       |                               |
+|tracks           |string     |                               |
+|user             |references |null: false, foreign_key: true |
 
 
 ### Association
+belongs_to: User
 has_many: Track
-has_many: Recording
 
 ## Trackテーブル
-|Column        |Type       |Options                        |
-|--------------|-----------|-------------------------------|
-|cd            |references |null: false, foreign_key: true |
-|track_name    |string     |null: false                    |
-|composer      |string     |                               |
-|lyricist      |string     |                               |
-|arranger      |string     |                               |
-
-### Association
-belongs_to: Cd
-has_many: Recording
-
-## Recordingテーブル
 |Column         |Type       |Options                        |
 |---------------|-----------|-------------------------------|
 |cd             |references |null: false, foreign_key: true |
-|track          |references |null: false, foreign_key: true |
-|recording_date |date       |                               |
+|title          |string     |null: false                    |
+|conductor      |string     |                               |
+|artist         |string     |null: false                    |
+|soloist        |string     |                               |
+|composer       |string     |                               |
+|lyricist       |string     |                               |
+|arranger       |string     |                               |
+|recording_date |string     |                               |
 
 ### Association
-belongs_to: Track
 belongs_to: Cd

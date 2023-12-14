@@ -41,8 +41,16 @@
     <%= f.label :program, "曲目" %><br />
     <%= f.text_area :program, id:"cd_program" %>
   </div>
-
+  <div class="field">
+    <%= f.label :recording_date, "収録日" %><br />
+    <%= f.text_field :recording_date, id:"cd_recording_date" %>
+  </div>
+  <div class="field">
+    <%= f.label :image, "ジャケットの画像" %><br />
+    <%= f.file_field :image, id:"cd_image" %>
+  </div>
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
   </div>
 <% end %>
+

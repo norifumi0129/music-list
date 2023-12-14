@@ -10,6 +10,7 @@ class CreateCds < ActiveRecord::Migration[7.0]
       t.string   :release_date
       t.integer  :price
       t.text     :program
+      t.string   :recording_date 
       t.timestamps
     end
   end
