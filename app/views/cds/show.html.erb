@@ -1,38 +1,38 @@
 <main class="main">
   <div class="inner">
-    <div class="prototype__wrapper">
-      <p class="prototype__hedding">
-        <%= "#{@prototype.title}"%>
+    <div class="cd__wrapper">
+      <p class="cd__hedding">
+        <%= "#{@cd.title}"%>
       </p>
-      <%= link_to "by #{@prototype.user.name}", 
-      user_path(@prototype.user),  # @prototypeに紐づくユーザーの詳細ページに遷移
-      class: :prototype__user %>
-        <% if user_signed_in? && current_user.id == @prototype.user_id %>
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_prototype_path(@prototype), class: :prototype__btn %>
-          <%= link_to "削除する", prototype_path(@prototype), data: { turbo_method: :delete }, class: :prototype__btn %>
+      <%= link_to "by #{@cd.user.name}", 
+      user_path(@cd.user),  # @cdに紐づくユーザーの詳細ページに遷移
+      class: :cd__user %>
+        <% if user_signed_in? && current_user.id == @cd.user_id %>
+        <div class="cd__manage">
+          <%= link_to "編集する", edit_cd_path(@cd), class: :cd__btn %>
+          <%= link_to "削除する", cd_path(@cd), data: { turbo_method: :delete }, class: :cd__btn %>
         </div>
         <% end %>
-      <div class="prototype__image">
-        <%= image_tag @prototype.image if @prototype.image.attached? %>
+      <div class="cd__image">
+        <%= image_tag @cd.image if @cd.image.attached? %>
       </div>
-      <div class="prototype__body">
-        <div class="prototype__detail">
+      <div class="cd__body">
+        <div class="cd__detail">
           <p class="detail__title">キャッチコピー</p>
           <p class="detail__message">
-            <%= "#{@prototype.catch_copy}" %>
+            <%= "#{@cd.catch_copy}" %>
           </p>
         </div>
-        <div class="prototype__detail">
+        <div class="cd__detail">
           <p class="detail__title">コンセプト</p>
           <p class="detail__message">
-            <%= "#{@prototype.concept}" %>
+            <%= "#{@cd.concept}" %>
           </p>
         </div>
       </div>
-      <div class="prototype__comments">
+      <div class="cd__comments">
         <% if user_signed_in? %>
-          <%= form_with model: [@prototype, Comment.new] do |f|%>
+          <%= form_with model: [@cd, Comment.new] do |f|%>
             <div class="field">
               <%= f.label :content, "コメント" %><br />
               <%= f.text_field :content, id:"comment_content" %>

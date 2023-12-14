@@ -23,6 +23,7 @@ has_many: CD
 |release_label    |string     |                               |
 |release_date     |string     |                               |
 |price            |integer    |                               |
+|program          |text       |                               |
 
 
 ### Association

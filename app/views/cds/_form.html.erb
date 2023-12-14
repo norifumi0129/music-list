@@ -11,7 +11,7 @@
 
   <div class="field">
     <%= f.label :major_genre_id, "ジャンル" %><br />
-    <%= f.text_field :cmajor_genre_id, id:"cd_major_genre_id" %>
+    <%= f.text_field :major_genre_id, id:"cd_major_genre_id" %>
   </div>
   <div class="field">
     <%= f.label :minor_genre_id, "小ジャンル" %><br />
@@ -34,12 +34,12 @@
   
   <div class="field">
     <%= f.label :price, "価格（税抜）" %><br />
-    <%= f.text_field :price, id:"price" %>
+    <%= f.text_field :price, id:"cd_price" %>
   </div>
 
   <div class="field">
     <%= f.label :program, "曲目" %><br />
-    <%= f.text_area :program, id:"program" %>
+    <%= f.text_area :program, id:"cd_program" %>
   </div>
 
   <div class="actions">
