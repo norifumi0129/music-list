@@ -2,9 +2,9 @@
   <div class="inner">
     <div class="cd__wrapper">
       <p class="cd__hedding">
-        <%= "#{@cd.title}"%>
+        <%= @cd.title%>
       </p>
-      <%= link_to "by #{@cd.user.name}", 
+      <%= link_to "by #{@cd.user.nickname}", 
       user_path(@cd.user),  # @cdに紐づくユーザーの詳細ページに遷移
       class: :cd__user %>
         <% if user_signed_in? && current_user.id == @cd.user_id %>

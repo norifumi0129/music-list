@@ -16,9 +16,10 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%= link_to "Music List", root_path %>
+            <%= link_to image_tag("header.png", class: :logo), root_path %>
           </div>
-          <% if user_signed_in? %><%= form_with(url: search_cds_path, local: true, method: :get, class: "search-form") do |form| %>
+          <% if user_signed_in? %>
+          <%= form_with(url: search_cds_path, local: true, method: :get, class: "search-form") do |form| %>
             <%= form.text_field :keyword, placeholder: "CDを検索する", class: "search-input" %>
             <%= form.submit "検索", class: "search-btn" %>
             <% end %>

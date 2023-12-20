@@ -9,6 +9,9 @@ class CdsController < ApplicationController
     Cd.create(cd_params)
     redirect_to '/'
   end
+  def show
+    @cd = Cd.find(params[:id])
+  end
   private
   def cd_params
     params.require(:cd).permit(:title, :spec_number, :major_genre_id, :minor_genre_id, :jan_code, :release_label, :release_date, :price, :program, :recording_date, :image)
