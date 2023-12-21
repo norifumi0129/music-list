@@ -23,7 +23,7 @@ has_many: CD
 |release_label    |string     |                               |
 |release_date     |string     |                               |
 |price            |integer    |                               |
-|tracks           |string     |                               |
+|program          |text       |                               |
 |user             |references |null: false, foreign_key: true |
 
 
