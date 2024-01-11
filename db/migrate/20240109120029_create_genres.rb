@@ -1,8 +1,8 @@
 class CreateGenres < ActiveRecord::Migration[7.0]
   def change
     create_table :genres do |t|
-      t.string     :title        , null: false
-      t.integer    :genre_id     , null: false
+      t.string :name,      null: false   
+      t.string :ancestry,  null: false
       t.timestamps
     end
   end
