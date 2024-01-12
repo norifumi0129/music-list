@@ -1,68 +1,8 @@
 pop, rock, dance, classic, jazz, easy, japanese, anime, soundtrack, world, children, korea, imported, dvd, other = Category.create([{name: "J-POP"}, {name: "ロック・ポップス"},{name: "ダンス・ソウル"},{name: "クラシック"},{name: "ジャズ"},{name: "イージーリスニング"},{name: "演歌・純邦楽・落語"},{name: "アニメ"},{name: "サウンドトラック"},{name: "ワールドミュージック"},{name: "キッズ・ファミリー"},{name: "韓国(K-POP)・アジア"},{name: "輸入盤"},{name: "DVD・Blu-ray付き"},{name: "その他"}])
 
 
-
-tops,jaket_outer,pants,skart,wanpice,shoo,roomwea,regwea,hat,bag,acesary,hairacesary,komono,tokeil,wigexste,yukata,sutu,matanity,sonota = ladies.children.create([{name: "トップス"},{name: "ジャケット/アウター"},{name: "パンツ"},{name: "スカート"},{name: "ワンピース"},{name: "靴"},{name: "ルームウェア/パジャマ"},{name: "レッグウェア"},{name: "帽子"},{name: "バッグ"},{name: "アクセサリー"},{name: "ヘアアクセサリー"},{name: "小物"},{name: "時計"},{name: "ウィッグ/エクステ"},{name: "浴衣/水着"},{name: "スーツ/フォーマル/ドレス"},{name: "マタニティ"},{name: "その他"}])
-
-tops.children.create([{name: "Tシャツ/カットソー(半袖/袖なし)"}, {name: "Tシャツ/カットソー(七分/長袖)"},{name: "シャツ/ブラウス(半袖/袖なし)"}, {name: "シャツ/ブラウス(七分/長袖)"},{name: "ポロシャツ"},{name: "キャミソール"},{name: "タンクトップ"},{name: "ホルターネック"},{name: "ニット/セーター"},{name: "チュニック"},{name: "カーディガン/ボレロ"},{name: "アンサンブル"},{name: "ベスト/ジレ"},{name: "パーカー"},{name: "トレーナー/スウェット"},{name: "ベアトップ/チューブトップ"},{name: "その他"}])
-jaket_outer.children.create([{name: "テーラードジャケット"},{name: "ノーカラージャケット"},{name: "Gジャン/デニムジャケット"},{name: "レザージャケット"},{name: "ダウンジャケット"},{name: "ライダースジャケット"},{name: "ミリタリージャケット"},{name: "ダウンベスト"},{name: "ジャンパー/ブルゾン"},{name: "ポンチョ"},{name: "ロングコート"},{name: "トレンチコート"},{name: "ダッフルコート"},{name: "ピーコート"},{name: "チェスターコート"},{name: "モッズコート"},{name: "スタジャン"},{name: "毛皮/ファーコート"},{name: "スプリントコート"},{name: "スカジャン"},{name: "その他"}])
-
-pants.children.create([{name: "デニム/ジーンズ"}, {name: "ショートパンツ"},{name: "カジュアルパンツ"}, {name: "ハーフパンツ"},{name: "チノパン"},{name: "ワークパンツ/カーゴパンツ"},{name: "クロップドパンツ"},{name: "サロペット/オーバーオール"},{name: "オールインワン"},{name: "サルエルパンツ"},{name: "ガウチョパンツ"},{name: "その他"}])
-
-skart.children.create([{name: "ミニスカート"},{name: "ひざ丈スカート"},{name: "ロングスカート"},{name: "キュロット"},{name: "その他"}])
-
-wanpice.children.create([{name: "ミニワンピース"},{name: "ひざ丈ワンピース"},{name: "ロングワンピース"},{name: "その他"}])
-
-shoo.children.create([{name: "ハイヒール/パンプス"},{name: "ブーツ"},{name: "サンダル"},{name: "スニーカー"},{name: "ミュール"},{name: "モカシン"},{name: "ローファー/革靴"},{name: "フラットシューズ/バレエシューズ"},{name: "長靴/レインシューズ"},{name: "その他"}])
-
-
-roomwea.children.create([{name: "パジャマ"},{name: "ルームウェア"}])
-
-regwea.children.create([{name: "ソックス"},{name: "スパッツ/レギンス"},{name: "ストッキング/タイツ"},{name: "レッグウォーマー"},{name: "その他"}])
-
-hat.children.create([{name: "ニットキャップ/ビーニー"},{name: "ハット"},{name: "ハッチング/ベレー帽"},{name: "キャップ"},{name: "キャスケット"},{name: "麦わら帽子"},{name: "その他"}])
-
-bag.children.create([{name: "ハンドバッグ"},{name: "トートバッグ"},{name: "エコバッグ"},{name: "リュック/バックパック"},{name: "ボストンバック"},{name: "スポーツバッグ"},{name: "ショルダーバッグ"},{name: "クラッチバッグ"},{name: "ポーチ/バニティ"},{name: "ボディバッグ/ウェストバッグ"},{name: "マザーズバッグ"},{name: "メッセンジャーバッグ"},{name: "ビジネスバッグ"},{name: "旅行用バッグ/キャリーバッグ"},{name: "ショップ袋"},{name: "和装用バッグ"},{name: "かごバッグ"},{name: "その他"}])
-
-
-acesary.children.create([{name: "ネックレス"},{name: "ブレスレット"},{name: "バングル/リストバンド"},{name: "リング"},{name: "ピアス(片耳用)"},{name: "ピアス(両耳用)"},{name: "イヤリング"},{name: "アンクレット"},{name: "ブローチ/コサージュ"},{name: "チャーム"},{name: "その他"}])
-
-hairacesary.children.create([{name: "ヘアゴム/シュシュ"},{name: "ヘアバンド/カチューシャ"},{name: "ヘアピン"},{name: "その他"}])
-
-
-["長財布","折り財布","コインケース/小銭入れ","名刺入れ/定期入れ","キーケース","キーホルダー","手袋/アームカバー","ハンカチ","ベルト","マフラー/ショール","ストール/スヌード","バンダナ/スカーフ","ネックウォーマー","サスペンダー","サングラス/メガネ","モバイルケース/カバー","手帳","イヤマフラー","傘","レインコート/ポンチョ","ミラー","タバコグッズ","その他"].each do |name|
-
-  komono.children.create(name: name)
-
-end
-
-["腕時計(アナログ)","腕時計(デジタル)","ラバーベルト","レザーベルト","金属ベルト","その他"].each do |name|
-
-  tokeil.children.create(name: name)
-
-end
-
-["前髪ウィッグ","ロングストレート","ロングカール","ショートストレート","ショートカール","その他"].each do |name|
-  wigexste.children.create(name: name)
-end
-
-["浴衣","着物","振袖","長襦袢/半襦袢","水着セパレート","水着ワンピース","水着スポーツ用","その他"].each do |name|
-  yukata.children.create(name: name)
-end
-
-["スカートスーツ上下","パンツスーツ上下","ドレス","パーティーバッグ","シューズ","ウェディング","その他"].each do |name|
-  sutu.children.create(name: name)
-end
-
-["トップス","アウター","インナー","ワンピース","パンツ/スパッツ","スカート","パジャ","授乳服","その他"].each do |name|
-  matanity.children.create(name: name)
-end
-
-["コスプレ","下着","その他"].each do |name|
-  sonota.children.create(name: name)
-end
-
-
+# J-POP
+pops,folk,omnibus,other1,rock1,rap = pop.children.create([{name: "ポップス"},{name: "フォーク・ニューミュージック"},{name: "オムニバス"},{name: "その他"},{name: "ロック・ソウル"},{name: "ラップ・ヒップホップ"}])
 
 
 # メンズ
