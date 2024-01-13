@@ -4,69 +4,8 @@ pop, rock, dance, classic, jazz, easy, japanese, anime, soundtrack, world, child
 # J-POP
 pops,folk,omnibus,other1,rock1,rap = pop.children.create([{name: "ポップス"},{name: "フォーク・ニューミュージック"},{name: "オムニバス"},{name: "その他"},{name: "ロック・ソウル"},{name: "ラップ・ヒップホップ"}])
 
-
-# メンズ
-tops,jaket_outer,pants,shoo,bag,sutu,hat,acesary,komono,tokeim,mizugi,regwea,underwea,sonota = mens.children.create([{name: "トップス"},{name: "ジャケット/アウター"},{name: "パンツ"},{name: "靴"},{name: "バッグ"},{name: "スーツ"},{name: "帽子"},{name: "アクセサリー"},{name: "小物"},{name: "時計"},{name: "水着"},{name: "レッグウェア"},{name: "アンダーウェア"},{name: "その他"}])
-
-["Tシャツ/カットソー(半袖/袖なし)","Tシャツ/カットソー(七分/長袖)","シャツ","ポロシャツ","タンクトップ","ニット/セーター","パーカー","カーディガン","スウェット","ジャージ","ベスト","その他"].each do |name|
-  tops.children.create(name: name)
-end
-
-["テーラードジャケット","ノーカラージャケット","Gジャン/デニムジャケット","レザージャケット","ダウンジャケット","ライダースジャケット","ミリタリージャケット","ナイロンジャケット","フライトジャケット","ダッフルコート","ピーコート","ステンカラーコート","トレンチコート","モッズコー","チェスターコート","スタジャン","スカジャン","ブルゾン","マウンテンパーカー","ダウンベスト","ポンチョ","カバーオール","その他"].each do |name|
-  jaket_outer.children.create(name: name)
-end
-
-
-["デニム/ジーンズ","ワークパンツ/カーゴパンツ","スラックス","チノパン","ショートパンツ","ペインターパンツ","サルエルパンツ","オーバーオール","その他"].each do |name|
-  pants.children.create(name: name)
-end
-
-
-["スニーカー","サンダル","ブーツ","モカシン","ドレス/ビジネス","長靴/レインシューズ","デッキシューズ","その他"].each do |name|
-  shoo.children.create(name: name)
-end
-
-["ショルダーバッグ","トートバッグ","ボストンバッグ","リュック/バックパック","ウエストポーチ","ボディーバッグ","ドラムバッグ","ビジネスバッグ","トラベルバッグ","メッセンジャーバッグ","エコバッグ","その他"].each do |name|
-  bag.children.create(name: name)
-end
-
-
-["スーツジャケット","スーツベスト","スラックス","セットアップ","その他"].each do |name|
-  sutu.children.create(name: name)
-end
-
-["キャップ","ハット","ニットキャップ/ビーニー","ハンチング/ベレー帽","キャスケット","サンバイザー","その他"].each do |name|
-  hat.children.create(name: name)
-end
-
-["ネックレス","ブレスレット","バングル/リストバンド","リング","ピアス(片耳用)","ピアス(両耳用)","アンクレット","その他"].each do |name|
-  acesary.children.create(name: name)
-end
-
-
-["長財布","折り財布","マネークリップ","コインケース/小銭入れ","名刺入れ/定期入れ","キーケース","キーホルダー","ネクタイ","手袋","ハンカチ","ベルト","マフラー","ストール","バンダナ","ネックウォーマー","サスペンダー","ウォレットチェーン","サングラス/メガネ","モバイルケース/カバー","手帳","ストラップ","ネクタイピン","カフリンクス","イヤマフラー","傘","レインコート","ミラー","タバコグッズ","その他"].each do |name|
-  komono.children.create(name: name)
-end
-
-
-["腕時計(アナログ)","腕時計(デジタル)","ラバーベルト","レザーベルト","金属ベルト","その他"].each do|name|
-  tokeim.children.create(name: name)
-end
-
-
-["一般水着","スポーツ用","アクセサリー","その他"].each do |name|
-  mizugi.children.create(name: name)
-end
-
-
-["ソックス","レギンス/スパッツ","レッグウォーマー","その他"].each do |name|
-  regwea.children.create(name: name)
-end
-
-["トランクス","ボクサーパンツ","その他"].each do |name|
-  underwea.children.create(name: name)
-end
-
+# ロック・ポップス
+pops2,hard_rock,omnibus2,country,rock1,other2 = rock.children.create([{name: "ポップス・ヴォーカル"},{name: "ハードロック・ヘヴィメタル"},{name: "オムニバス"},{name: "フォーク・カントリー"},{name: "ロック・オルタナティブ"},{name: "その他"}])
 
 # ベビー・キッズ
 bwoman,bman,bwm,kidsw,kidsm,kidswm,shoo,komono,omutu,gaishutu,junyuu,kagu,toy,gyouji,sonota = baby.children.create([{name: "ベビー服(女の子用)~95cm"},{name: "ベビー服(男の子用)~95cm"},{name: "ベビー服(男女兼用)~95cm"},{name: "キッズ服(女の子用)100cm~"},{name: "キッズ服(男の子用)100cm~"},{name: "キッズ服(男女兼用)100cm~"},{name: "キッズ靴"},{name: "子供用ファッション小物"},{name: "おむつ/トイレ/バス"},{name: "外出/移動用品"},{name: "授乳/食事"},{name: "ベビー家具/寝具/室内用品"},{name: "おもちゃ"},{name: "行事/記念品"},{name: "その他"}])
