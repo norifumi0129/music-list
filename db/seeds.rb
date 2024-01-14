@@ -8,19 +8,19 @@ pops,folk,omnibus,other,rock,rap = pop.children.create([{name: "ポップス"},{
 pops,hard_rock,omnibus,country,rock,other = rock.children.create([{name: "ポップス・ヴォーカル"},{name: "ハードロック・ヘヴィメタル"},{name: "オムニバス"},{name: "フォーク・カントリー"},{name: "ロック・オルタナティブ"},{name: "その他"}])
 
 # ダンス・ソウル
-bwoman,bman,bwm,kidsw,kidsm,kidswm,shoo,komono,omutu,gaishutu,junyuu,kagu,toy,gyouji,sonota = baby.children.create([{name: "ベビー服(女の子用)~95cm"},{name: "ベビー服(男の子用)~95cm"},{name: "ベビー服(男女兼用)~95cm"},{name: "キッズ服(女の子用)100cm~"},{name: "キッズ服(男の子用)100cm~"},{name: "キッズ服(男女兼用)100cm~"},{name: "キッズ靴"},{name: "子供用ファッション小物"},{name: "おむつ/トイレ/バス"},{name: "外出/移動用品"},{name: "授乳/食事"},{name: "ベビー家具/寝具/室内用品"},{name: "おもちゃ"},{name: "行事/記念品"},{name: "その他"}])
+club,randb,rap,blues,hougaku,omnibus,other = dance.children.create([{name: "クラブ・ディスコ"},{name: "R&B・ソウル"},{name: "ラップ・ヒップホップ"},{name: "ブルース・ゴスペル"},{name: "邦楽クラブ・テクノ"},{name: "オムニバス"},{name: "その他"}])
 
 # クラシック
-kichin,bed,sofa,isu,table,kagu,rag,karten,light,singu,interia,kisetu,sonota = interior.children.create([{name: "キッチン/食器"},{name: "ベッド/マットレス"},{name: "ソファ/ソファベッド"},{name: "椅子/チェア"},{name: "机/テーブル"},{name: "収納家具"},{name: "ラグ/カーペット/マット"},{name: "カーテン/ブラインド"},{name: "ライト/照明"},{name: "寝具"},{name: "インテリア小物"},{name: "季節/年中行事"},{name: "その他"}])
+symphony,orchestra,concerto,kigaku,sitsunaigaku,kogaku,kageki,suisougaku,seigaku,gendaiongaku,omnibus,other = classic,.children.create([{name: "交響曲"},{name: "管弦楽曲"},{name: "協奏曲"},{name: "器楽曲"},{name: "室内楽曲"},{name: "古楽・バロック音楽"},{name: "歌劇・オペラ"},{name: "吹奏楽"},{name: "声楽曲"},{name: "現代音楽"},{name: "オムニバス"},{name: "その他"}])
 
 # ジャズ
-book,manga,zashi,cd,dvd,record,game = book_music_game.children.create([{name: "本"},{name: "漫画"},{name: "雑誌"},{name: "CD"},{name: "DVD/ブルーレイ"},{name: "レコード"},{name: "テレビゲーム"}])
+vocal,dixie,nihonnnojazz,omnibus,fusion,modern,other = jazz.children.create([{name: "ヴォーカル"},{name: "ディキシー・スイング"},{name: "日本のジャズ"},{name: "オムニバス"},{name: "フュージョン"},{name: "モダンジャズ"},{name: "その他"}])
 
 # イージーリスニング
-omotya,tarent,comic,card,figure,gakki,core,miritary,bijutu,art,sonota = toy_hoby_goods.children.create([{name: "おもちゃ"},{name: "タレントグッズ"},{name: "コミック/アニメグッズ"},{name: "トレーディングカード"},{name: "フィギュア"},{name: "楽器/器材"},{name: "コレクション"},{name: "ミリタリー"},{name: "美術品"},{name: "アート用品"},{name: "その他"}])
+easylistening,healing,other = easy.children.create([{name: "イージーリスニング・ムード音楽"},{name: "ヒーリング・ニューエイジ"},{name: "その他"}])
 
 # 演歌・純邦楽・落語
-base,make,nail,kousui,skin,hairca,bodyca,oral,rirag,diet,sonota = kosumebiyou.children.create([{name: "ベースメイク"},{name: "メイクアップ"},{name: "ネイルケア"},{name: "香水"},{name: "スキンケア/基礎化粧品"},{name: "ヘアケア"},{name: "ボディケア"},{name: "オーラルケア"},{name: "リラグゼーション"},{name: "ダイエット"},{name: "その他"}])
+junhougaku,hoby,rakugo,enka,karaoke,document,other = japanese.children.create([{name: "純邦楽・民謡"},{name: "趣味・教養"},{name: "落語・演芸"},{name: "演歌・歌謡曲"},{name: "カラオケ"},{name: "ドキュメント・脱音楽"},{name: "その他"}])
 
 # アニメ
 sumaho,sumahoac,pctab,camera,terebi,odio,biyou,reibou,seikatu,sonota = kadensumaho.children.create([{name: "スマートフォン/携帯電話"},{name: "スマホアクセサリー"},{name: "PC/タブレット"},{name: "カメラ"},{name: "テレビ/映像機器"},{name: "オーディオ機器"},{name: "美容/健康"},{name: "冷暖房/空調"},{name: "生活家電"},{name: "その他"}])
