@@ -1,5 +1,4 @@
-pop, rock, dance, classic, jazz, easy, japanese, anime, soundtrack, world, children, korea, imported, dvd, other = Category.create([{name: "J-POP"}, {name: "ロック・ポップス"},{name: "ダンス・ソウル"},{name: "クラシック"},{name: "ジャズ"},{name: "イージーリスニング"},{name: "演歌・純邦楽・落語"},{name: "アニメ"},{name: "サウンドトラック"},{name: "ワールドミュージック"},{name: "キッズ・ファミリー"},{name: "韓国(K-POP)・アジア"},{name: "輸入盤"},{name: "DVD・Blu-ray付き"},{name: "ジャンルなし"}])
-
+pop, rock, dance, classic, jazz, easy, japanese, anime, soundtrack, world, child, korea, imported, dvd, other1 = Category.create([{name: "J-POP"}, {name: "ロック・ポップス"},{name: "ダンス・ソウル"},{name: "クラシック"},{name: "ジャズ"},{name: "イージーリスニング"},{name: "演歌・純邦楽・落語"},{name: "アニメ"},{name: "サウンドトラック"},{name: "ワールドミュージック"},{name: "キッズ・ファミリー"},{name: "韓国(K-POP)・アジア"},{name: "輸入盤"},{name: "DVD・Blu-ray付き"},{name: "ジャンルなし"}])
 
 # J-POP
 pops,folk,omnibus,other,rock,rap = pop.children.create([{name: "ポップス"},{name: "フォーク・ニューミュージック"},{name: "オムニバス"},{name: "その他"},{name: "ロック・ソウル"},{name: "ラップ・ヒップホップ"}])
@@ -32,16 +31,16 @@ houga,youga,kokunaitv,kaigaitv,engeki,sonota = soundtrack.children.create([{name
 reggae,bossanova,latin,hawaii,europa,africa,sonota = world.children.create([{name: "レゲエ"},{name: "ボサノヴァ・ブラジル"},{name: "ラテン・キューバ・タンゴ"},{name: "ハワイアン"},{name: "ヨーロッパ"},{name: "アフリカ"},{name: "その他"}])
 
 # キッズ・ファミリー
-music,sport,engeki,event,moovi,sisetu,yutai,sonota = children.children.create([{name: "音楽"},{name: "スポーツ"},{name: "演劇/芸能"},{name: "イベント"},{name: "映画"},{name: "施設利用券"},{name: "優待券/割引券"},{name: "その他"}])
+disney,douyou,hero,kyouzai,sonota = child.children.create([{name: "ディズニー"},{name: "童謡・唱歌"},{name: "戦隊ヒーロー"},{name: "教材"},{name: "その他"}])
 
 # 韓国(K-POP)・アジア
-car,taiya,part,acs,autoby,autopart,autobyac = car_autoby.children.create([{name: "自動車本体"},{name: "自動車タイヤ/ホイール"},{name: "自動車パーツ"},{name: "自動車アクセサリー"},{name: "オートバイ車体"},{name: "オートバイパーツ"},{name: "オートバイアクセサリー"}])
+kankoku = korea.children.create([{name: ""}])
 
 # 輸入盤
-matome,pet,food,drink,nitiyou,untic,bunbou,jimu,sonota = sonota1.children.create([{name: "まとめ売り"},{name: "ペット用品"},{name: "食品"},{name: "飲料/酒"},{name: "日用品/生活雑貨/旅行"},{name: "アンティーク/コレクション"},{name: "文房具/事務用品"},{name: "事務"},{name: ""}])
+yunyuu = imported.children.create([{name: ""}])
 
 # DVD・Blu-ray付
-matome,pet,food,drink,nitiyou,untic,bunbou,jimu,sonota = sonota1.children.create([{name: "まとめ売り"},{name: "ペット用品"},{name: "食品"},{name: "飲料/酒"},{name: "日用品/生活雑貨/旅行"},{name: "アンティーク/コレクション"},{name: "文房具/事務用品"},{name: "事務"},{name: ""}])
+bluray = dvd.children.create([{name: ""}])
 
 # ジャンルなし
-matome,pet,food,drink,nitiyou,untic,bunbou,jimu,sonota = sonota1.children.create([{name: "まとめ売り"},{name: "ペット用品"},{name: "食品"},{name: "飲料/酒"},{name: "日用品/生活雑貨/旅行"},{name: "アンティーク/コレクション"},{name: "文房具/事務用品"},{name: "事務"},{name: ""}])
+sonota = other1.children.create([{name: ""}])
