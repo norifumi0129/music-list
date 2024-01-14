@@ -10,7 +10,7 @@ pops,hard_rock,omnibus,country,rock,other = rock.children.create([{name: "ポッ
 club,randb,rap,blues,hougaku,omnibus,other = dance.children.create([{name: "クラブ・ディスコ"},{name: "R&B・ソウル"},{name: "ラップ・ヒップホップ"},{name: "ブルース・ゴスペル"},{name: "邦楽クラブ・テクノ"},{name: "オムニバス"},{name: "その他"}])
 
 # クラシック
-symphony,orchestra,concerto,kigaku,sitsunaigaku,kogaku,kageki,suisougaku,seigaku,gendaiongaku,omnibus,other = classic,.children.create([{name: "交響曲"},{name: "管弦楽曲"},{name: "協奏曲"},{name: "器楽曲"},{name: "室内楽曲"},{name: "古楽・バロック音楽"},{name: "歌劇・オペラ"},{name: "吹奏楽"},{name: "声楽曲"},{name: "現代音楽"},{name: "オムニバス"},{name: "その他"}])
+symphony,orchestra,concerto,kigaku,sitsunaigaku,kogaku,kageki,suisougaku,seigaku,gendaiongaku,omnibus,other = classic.children.create([{name: "交響曲"},{name: "管弦楽曲"},{name: "協奏曲"},{name: "器楽曲"},{name: "室内楽曲"},{name: "古楽・バロック音楽"},{name: "歌劇・オペラ"},{name: "吹奏楽"},{name: "声楽曲"},{name: "現代音楽"},{name: "オムニバス"},{name: "その他"}])
 
 # ジャズ
 vocal,dixie,nihonnnojazz,omnibus,fusion,modern,other = jazz.children.create([{name: "ヴォーカル"},{name: "ディキシー・スイング"},{name: "日本のジャズ"},{name: "オムニバス"},{name: "フュージョン"},{name: "モダンジャズ"},{name: "その他"}])
