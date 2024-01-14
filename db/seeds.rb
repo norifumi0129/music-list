@@ -23,17 +23,16 @@ easylistening,healing,other = easy.children.create([{name: "イージーリス�
 junhougaku,hoby,rakugo,enka,karaoke,document,other = japanese.children.create([{name: "純邦楽・民謡"},{name: "趣味・教養"},{name: "落語・演芸"},{name: "演歌・歌謡曲"},{name: "カラオケ"},{name: "ドキュメント・脱音楽"},{name: "その他"}])
 
 # アニメ
-sumaho,sumahoac,pctab,camera,terebi,odio,biyou,reibou,seikatu,sonota = kadensumaho.children.create([{name: "スマートフォン/携帯電話"},{name: "スマホアクセサリー"},{name: "PC/タブレット"},{name: "カメラ"},{name: "テレビ/映像機器"},{name: "オーディオ機器"},{name: "美容/健康"},{name: "冷暖房/空調"},{name: "生活家電"},{name: "その他"}])
+kokunai,kaigai,game,drama,other = anime.children.create([{name: "国内アニメ音楽"},{name: "海外アニメ音楽"},{name: "ゲーム音楽"},{name: "ドラマCD"},{name: "その他"}])
 
 # サウンドトラック
-golf,fissing,jitensya,traning,yakyu,sakka,tenisu,snowbode,skie,tasport,outdore,sonota = sportleja.children.create([{name: "ゴルフ"},{name: "フィッシング"},{name: "自転車"},{name: "トレーニング/エクササイズ"},{name: "野球"},{name: "サッカー/フットサル"},{name: "テニス"},{name: "スノーボード"},{name: "スキー"},{name: "その他スポーツ"},{name: "アウトドア"},{name: "その他"}])
+houga,youga,kokunaitv,kaigaitv,engeki,sonota = soundtrack.children.create([{name: "邦画"},{name: "洋画"},{name: "国内TV音楽"},{name: "海外TV音楽"},{name: "演劇・ミュージカル"},{name: "その他"}])
 
 # ワールドミュージック
-acw,fassionko,tokei,nitiyou,syumi,kids,sozai,niji,sonota = handmade.children.create([{name: "アクセサリー(女性用)"},{name: "ファッション/小物"},{name: "ファッション/時計"},{name: "日用品/インテリア"},{name: "趣味/おもちゃ"},{name: "キッズ/ベビー"},{name: "素材/材料"},{name: "
-二次創作物"},{name: "素材/材料"},{name: "その他"}])
+reggae,bossanova,latin,hawaii,europa,africa,sonota = world.children.create([{name: "レゲエ"},{name: "ボサノヴァ・ブラジル"},{name: "ラテン・キューバ・タンゴ"},{name: "ハワイアン"},{name: "ヨーロッパ"},{name: "アフリカ"},{name: "その他"}])
 
 # キッズ・ファミリー
-music,sport,engeki,event,moovi,sisetu,yutai,sonota = ticket.children.create([{name: "音楽"},{name: "スポーツ"},{name: "演劇/芸能"},{name: "イベント"},{name: "映画"},{name: "施設利用券"},{name: "優待券/割引券"},{name: "その他"}])
+music,sport,engeki,event,moovi,sisetu,yutai,sonota = children.children.create([{name: "音楽"},{name: "スポーツ"},{name: "演劇/芸能"},{name: "イベント"},{name: "映画"},{name: "施設利用券"},{name: "優待券/割引券"},{name: "その他"}])
 
 # 韓国(K-POP)・アジア
 car,taiya,part,acs,autoby,autopart,autobyac = car_autoby.children.create([{name: "自動車本体"},{name: "自動車タイヤ/ホイール"},{name: "自動車パーツ"},{name: "自動車アクセサリー"},{name: "オートバイ車体"},{name: "オートバイパーツ"},{name: "オートバイアクセサリー"}])
