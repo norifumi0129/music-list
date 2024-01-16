@@ -7,4 +7,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  get '/category/:id', to: 'categories#search'
 end

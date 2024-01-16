@@ -10,13 +10,10 @@
   </div>
 
   <div class="field">
+    ジャンル
     <div id="select-wrap">
       <%= f.collection_select :ancestry, @maincategories, :id, :name, {include_blank: "---"}, {id: "parent-category" } %>
     </div>
-  </div>
-  <div class="field">
-    <%= f.label :minor_genre_id, "小ジャンル" %><br />
-    <%= f.text_field :minor_genre_id, id:"cd_minor_genre_id" %>
   </div>
   <div class="field">
     <%= f.label :jan_code, "JANコード" %><br />

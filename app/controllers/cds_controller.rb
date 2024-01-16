@@ -4,6 +4,8 @@ class CdsController < ApplicationController
   end
   def new
     @cd = Cd.new
+    @categories = Category.new
+    @maincategories = Category.all.order("id ASC").limit(15)
   end
   def create
     Cd.create(cd_params)
