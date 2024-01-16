@@ -10,8 +10,9 @@
   </div>
 
   <div class="field">
-    <%= f.label :major_genre_id, "ジャンル" %><br />
-    <%= f.text_field :major_genre_id, id:"cd_major_genre_id" %>
+    <div id="select-wrap">
+      <%= f.collection_select :ancestry, @maincategories, :id, :name, {include_blank: "---"}, {id: "parent-category" } %>
+    </div>
   </div>
   <div class="field">
     <%= f.label :minor_genre_id, "小ジャンル" %><br />
