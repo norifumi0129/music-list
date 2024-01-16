@@ -14,6 +14,11 @@ class CdsController < ApplicationController
   def show
     @cd = Cd.find(params[:id])
   end
+  def search
+    item = Category.find(params[:id])
+    children_item = item.children
+    render json:{ item: children_item }
+  end
   private
   def cd_params
     params.require(:cd).permit(:title, :spec_number, :major_genre_id, :minor_genre_id, :jan_code, :release_label, :release_date, :price, :program, :recording_date, :image)

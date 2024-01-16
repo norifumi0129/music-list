@@ -7,5 +7,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  get '/category/:id', to: 'categories#search'
+  get '/cds/new/:id', to: 'cds#new#search'
 end
