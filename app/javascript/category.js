@@ -26,12 +26,6 @@ window.addEventListener('turbo:load', function () {
       const items = XHR.response.item;
       appendChildSelect(items)
       const childCategory = document.getElementById('child-select')
-
-      // 子カテゴリーのプルダウンの値が変化することによって孫カテゴリーのイベント発火する
-      childCategory.addEventListener('change', () => {
-        selectChildElement('grand-child-select-wrap')
-        getGrandchildCategoryData(childCategory)
-      })
     }
   }
 
